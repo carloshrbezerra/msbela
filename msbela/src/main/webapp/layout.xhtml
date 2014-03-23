@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+      
+      
+	<h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link href="#{request.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="#{request.contextPath}/resources/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="#{request.contextPath}/resources/css/msbela.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="#{request.contextPath}/resources/css/responsive_msbela.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="icon" href="#{request.contextPath}/images/favicon.ico" />
+        <link href="https://plus.google.com/101596388471980915399" rel="publisher" />
+        <title>#{bundle.applicationName} - <ui:insert name="title">Title</ui:insert></title>
+        
+        
+        
+        
+        
+    </h:head>
+
+ 	<h:body>
+
+		
+		
+		<!--  BARRA DE CONFIGURAÇÃO PRINCPAL DO PAINEL ADMINISTRATIVO -->
+		<div class="navbar navbar-inverse navbar-static-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                                        class="icon-bar"></span><span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Compra Alvo</a>
+                            </div>
+                            
+                            
+                            <div class="navbar-collapse collapse">
+                                
+                                
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Carlos H R Bezerra
+                                        <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="navbar-content">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img src="http://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/twDq00QDud4/s120-c/photo.jpg"
+                                                                alt="Alternate Text" class="img-responsive" />
+                                                            <p class="text-center small">
+                                                                <a href="#">Atualizar Fotos</a></p>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <span>Carlos H R Bezerra</span>
+                                                            <p class="text-muted small">
+                                                                carloshrbezerra@gmail.com</p>
+                                                            <div class="divider">
+                                                            </div>
+                                                            <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navbar-footer">
+                                                    <div class="navbar-footer-content">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <a href="#" class="btn btn-default btn-sm">Change Passowrd</a>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <a href="http://www.jquery2dotnet.com" class="btn btn-default btn-sm pull-right">Sign Out</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                   
+				<!--END  BARRA DE CONFIGURAÇÃO PRINCPAL DO PAINEL ADMINISTRATIVO -->
+				
+				
+				
+				
+				
+				<div class="container-manage">
+				
+				
+						<!--  MENU PRINCIPAL DO PAINEL ADMINISTRATIVO -->
+					 	<div id="wrapper" class="active">
+						
+							<div id="sidebar-wrapper">
+							
+							
+						      
+						      <ul id="sidebar_menu" class="sidebar-nav">
+						           <li class="sidebar-brand">
+							           	<a id="menu-toggle" href="#">
+							           		Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span>
+							           	</a>
+						           	</li>
+						      </ul>
+						       
+						      <div class="panel-group sidebar-nav" id="accordion">	
+						        
+						       
+							       <ul class="sidebar-nav panel">
+							           <li class="sidebar-brand">
+								           	<a data-toggle="collapse" data-parent="#accordion" href="#collapseZero">
+								           		Cadastro<span id="main_icon" class="glyphicon glyphicon glyphicon-check"></span>
+								           	</a>
+							           	</li>
+							          
+							           <li id="collapseZero" class="panel-collapse collapse">
+										      <div class="">
+										        Basico
+										      </div>
+										</li>
+							       </ul>
+							     
+						       
+							       <ul class="sidebar-nav panel">
+							           <li class="sidebar-brand">
+								           	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								           		Controles<span id="main_icon" class="glyphicon glyphicon glyphicon-cog"></span>
+								           	</a>
+							           	</li>
+							          
+							           <li id="collapseOne" class="panel-collapse collapse">
+										      <div class="">
+										        Cadastro
+										      </div>
+										</li>
+							       </ul>
+							       
+							       
+							       <ul class="sidebar-nav panel">
+							           <li class="sidebar-brand">
+								           	<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+								           		Relatorios<span id="main_icon" class="glyphicon glyphicon glyphicon-signal"></span>
+								           	</a>
+							           	</li>
+							          
+							           <li id="collapseTwo" class="panel-collapse collapse">
+										      <div class="">
+										        Cadastro
+										      </div>
+										</li>
+							       </ul>
+							       
+							       </div>  
+						      
+						      </div>
+					      
+					      </div>
+		     			  <!--END  MENU PRINCIPAL DO PAINEL ADMINISTRATIVO -->
+		 	
+      
+			      		  <div class="container-content" id="container-content">
+			      			
+			      			
+			      				<ui:insert name="content">Content</ui:insert> 
+			      				
+			      				
+			      		   </div>
+ 
+				</div>
+		
+		
+		
+		
+		<ui:insert name="jquery"><script src="#{request.contextPath}/resources/js/vendor/jquery-1.10.1.min.js"></script></ui:insert>
+		
+		
+        <script src="#{request.contextPath}/resources/js/vendor/bootstrap.min.js"></script>
+        <script src="#{request.contextPath}/resources/js/main.js"></script>
+        <script src="#{request.contextPath}/resources/js/msbela.js"></script>
+        
+		<script>
+		  $(function () {
+		    $('#myTab a:fisrt').tab('show')
+		  })
+		</script>
+		
+	</h:body>
+	
+</html>

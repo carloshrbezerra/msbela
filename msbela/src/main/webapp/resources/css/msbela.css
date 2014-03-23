@@ -1,0 +1,284 @@
+/* ESTILO GERAL DA PAGINA ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.container{
+	max-width: 100% !important;
+	width: 100% !important;
+}
+
+.container-content{
+	width:89%;
+	height: 100%;
+	position:relative;
+	float: right;
+	left: 0;
+	margin: 8px auto;
+	-webkit-transition: left 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: left 0.5s;		
+	display: table;
+}
+
+#container-content.activeContent {
+    left: 20px;
+    -webkit-transition: left 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: left 0.5s;
+}
+
+.container-manage{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.container{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* MENU PRINCIPAL DO PAINEL ADMINISTRATIVO  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
+
+
+.panel{
+	
+	background-color: black;
+	border-top: 1px solid #373737;
+    border-bottom: 1px solid #1A1A1A;
+    border-radius:0 !important;
+	-moz-border-radius:0!important;
+	-webkit-border-radius:0!important;
+	box-shadow:none!important;
+	-moz-box-shadow:none!important;
+	-webkit-box-shadow:none!important;
+	text-decoration: none!important;
+	margin:0;
+    
+}
+
+.panel a{
+	color: #999;
+    text-decoration: none;
+}
+
+.panel div{
+	color: white;
+}
+
+
+/* NAVIGATOR SIDEBAR */
+
+.row{
+    margin-left:0px;
+    margin-right:0px;
+    margin: 0;
+}
+
+#wrapper {
+    padding-left: 70px;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    top: -50px;
+    -webkit-transition: padding-left 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: padding-left 0.5s;		
+    border: 1pxo
+    
+
+}
+
+#sidebar-wrapper {
+    margin-left: -150px;
+    left: 38px;
+    width: 200px;
+    background: #222;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    -webkit-transition: left 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: left 0.5s;	
+    top:1;
+    
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 180px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+#wrapper.active {
+    padding-left: 150px;
+    margin: 0;
+    -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: padding 0.5s;		
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+     -webkit-transition:left 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: left 0.5s;	
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+#sidebar_menu li a, .sidebar-nav li a {
+    color: #999;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 180px;
+    background: #252525;
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #1A1A1A;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+.sidebar_name {
+    padding-top: 25px;
+    color: #fff;
+    opacity: .7;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#main_icon
+{
+    float:right;
+   padding-right: 40px;
+   padding-top:20px;
+}
+.sub_icon
+{
+    float:right;
+   padding-right: 40px;
+   padding-top:10px;
+  
+}
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+
+
+/* BARRA PRINCIPAL DO PAINEL ADMINISTRATIVO :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar{
+margin-bottom: 0;	
+	
+}
+
+.navbar-brand{
+	position: relative;
+	left:20px;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin-top: 0;
+
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-content
+{
+    width:320px;
+    padding: 15px;
+    padding-bottom:0px;
+}
+.navbar-content:before, .navbar-content:after
+{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.navbar-nav.navbar-right:last-child {
+margin-right: 15px !important;
+}
+.navbar-footer 
+{
+    background-color:#DDD;
+}
+.navbar-footer-content { padding:15px 15px 15px 15px; }
+.dropdown-menu {
+padding: 0px;
+overflow: hidden;
+}
+
+.navbar-collapse{
+	max-width: 100% !important;
+	width: 100% !important;
+}
